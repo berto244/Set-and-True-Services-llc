@@ -527,12 +527,15 @@
         </div>
 
         <div class="bg-white border border-slate-200 shadow-xl shadow-slate-200/60 rounded-3xl p-8 md:p-10">
-            <form id="quote-form" onsubmit="handleQuoteSubmit(event)">
+            <form id="quote-form" action="https://formsubmit.co/albertrockets@gmail.com" method="POST">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_subject" value="New Set & True Services Lead">
+                <input type="hidden" name="_template" value="table">
                 <div class="grid md:grid-cols-2 gap-x-6 gap-y-6">
                     <!-- Name -->
                     <div>
                         <label class="block text-xs font-bold tracking-wider text-slate-500 mb-1.5">FULL NAME</label>
-                        <input type="text" id="full-name" required 
+                        <input type="text" id="full-name" name="Name" required 
                                class="w-full border border-slate-300 focus:border-teal-500 focus:ring-1 focus:ring-teal-500 rounded-2xl px-5 h-12 text-sm placeholder:text-slate-400" 
                                placeholder="Alex Rivera">
                     </div>
@@ -540,7 +543,7 @@
                     <!-- Email -->
                     <div>
                         <label class="block text-xs font-bold tracking-wider text-slate-500 mb-1.5">EMAIL ADDRESS</label>
-                        <input type="email" id="email" required 
+                        <input type="email" id="email" name="Email" required 
                                class="w-full border border-slate-300 focus:border-teal-500 focus:ring-1 focus:ring-teal-500 rounded-2xl px-5 h-12 text-sm placeholder:text-slate-400" 
                                placeholder="you@email.com">
                     </div>
@@ -548,7 +551,7 @@
                     <!-- Phone -->
                     <div>
                         <label class="block text-xs font-bold tracking-wider text-slate-500 mb-1.5">PHONE NUMBER</label>
-                        <input type="tel" id="phone" required 
+                        <input type="tel" id="phone" name="Phone" required 
                                class="w-full border border-slate-300 focus:border-teal-500 focus:ring-1 focus:ring-teal-500 rounded-2xl px-5 h-12 text-sm placeholder:text-slate-400" 
                                placeholder="(321) 387-8613">
                     </div>
@@ -556,7 +559,7 @@
                     <!-- Service -->
                     <div>
                         <label class="block text-xs font-bold tracking-wider text-slate-500 mb-1.5">SERVICE NEEDED</label>
-                        <select id="service-type" required 
+                        <select id="service-type" name="Service Needed" required 
                                 class="w-full border border-slate-300 focus:border-teal-500 focus:ring-1 focus:ring-teal-500 rounded-2xl px-5 h-12 text-sm bg-white">
                             <option value="">Select a service...</option>
                             <option value="Handyman & Punch-List Repairs">Handyman & Punch-List Repairs</option>
@@ -574,20 +577,20 @@
                 <div class="mt-6 grid md:grid-cols-2 gap-x-6 gap-y-6">
                     <div>
                         <label class="block text-xs font-bold tracking-wider text-slate-500 mb-1.5">PREFERRED START DATE</label>
-                        <input type="date" id="preferred-date" 
+                        <input type="date" id="preferred-date" name="Preferred Start Date" 
                                class="w-full border border-slate-300 focus:border-teal-500 focus:ring-1 focus:ring-teal-500 rounded-2xl px-5 h-12 text-sm">
                     </div>
                     
                     <div>
                         <label class="block text-xs font-bold tracking-wider text-slate-500 mb-1.5">PROJECT ADDRESS (City/Area)</label>
-                        <input type="text" id="address" placeholder="Orlando, FL" 
+                        <input type="text" id="address" name="Project Address / Area" placeholder="Orlando, FL" 
                                class="w-full border border-slate-300 focus:border-teal-500 focus:ring-1 focus:ring-teal-500 rounded-2xl px-5 h-12 text-sm">
                     </div>
                 </div>
                 
                 <div class="mt-6">
                     <label class="block text-xs font-bold tracking-wider text-slate-500 mb-1.5">TELL US ABOUT YOUR PROJECT</label>
-                    <textarea id="project-details" rows="4" required
+                    <textarea id="project-details" name="Project Details" rows="4" required
                               class="w-full border border-slate-300 focus:border-teal-500 focus:ring-1 focus:ring-teal-500 rounded-3xl px-5 py-4 text-sm resize-y min-h-[110px]"
                               placeholder="Example: Need to repair drywall in living room and repaint. Also interested in new baseboards..."></textarea>
                 </div>
@@ -639,7 +642,7 @@
             
             <div class="mt-6 flex flex-col sm:flex-row gap-3 justify-center">
                 <a href="#book" class="inline-block px-9 py-3.5 bg-white text-teal-700 font-bold rounded-3xl hover:bg-slate-100 transition">Request Your Quote Now</a>
-                <a href="mailto:info@setandtrueservices.com" class="inline-block px-9 py-3.5 border border-white/70 text-white font-semibold rounded-3xl hover:bg-white/10 transition">Email Us Directly</a>
+                <a href="mailto:albertrockets@gmail.com" class="inline-block px-9 py-3.5 border border-white/70 text-white font-semibold rounded-3xl hover:bg-white/10 transition">Email Us Directly</a>
             </div>
         </div>
     </div>
@@ -681,7 +684,7 @@
                     <div class="font-semibold text-white mb-4 tracking-wider text-xs">CONTACT</div>
                     <div class="space-y-2 text-sm">
                         <div><a href="tel:3213878613" class="hover:text-white transition">(321) 387-8613</a></div>
-                        <div><a href="mailto:info@setandtrueservices.com" class="hover:text-white transition">info@setandtrueservices.com</a></div>
+                        <div><a href="mailto:albertrockets@gmail.com" class="hover:text-white transition">albertrockets@gmail.com</a></div>
                         <div>Orlando, Florida Metro Area</div>
                         <div class="pt-1 text-xs">Serving Winter Park, Winter Garden, Lake Nona, Kissimmee, Altamonte Springs &amp; beyond</div>
                     </div>
