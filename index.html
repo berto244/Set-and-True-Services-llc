@@ -894,6 +894,32 @@
                 console.log('To update phone number site-wide, edit the HTML file directly.');
             }
         };
-    </script>
+    </script><script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+<script>
+window.addEventListener("load", () => {
+  const end = Date.now() + 3000;
+
+  (function frame() {
+    confetti({
+      particleCount: 12,
+      angle: 60,
+      spread: 80,
+      origin: { x: 0 }
+    });
+
+    confetti({
+      particleCount: 12,
+      angle: 120,
+      spread: 80,
+      origin: { x: 1 }
+    });
+
+    if (Date.now() < end) {
+      requestAnimationFrame(frame);
+    }
+  }());
+});
+</script>
 </body>
 </html>
